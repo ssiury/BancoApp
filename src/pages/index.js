@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, FlatList } from 'react-native';
 import Header from '../components/Header';
 import Balance from '../components/Balance';
 import Moviments from '../components/Moviments';
+import Actions from '../components/Actions';
 
 const list = [
     {
@@ -34,6 +35,8 @@ export default function Home() {
         <Header name="Iury Sousa" /*cabeçalho*/ />
         
         <Balance saldo="16.035,55" gastos="-450,45" /*visor de renda*/ />
+
+        <Actions /*botôes para ações*/ />
 
         <Text style={styles.title}>Últimas Movimentações</Text>
 
